@@ -6,7 +6,7 @@ var=list(filter(lambda n:n%2==0,li))
 print(var)
 
 """Map()"""
-li1=[10,23,46,89,79]
+li1= [10,23,46,89,79]
 var2=list(map(lambda n:n+1,li))
 print(var2)
 
