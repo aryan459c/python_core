@@ -50,7 +50,7 @@ LOADS= Convert byte Sting to dict
 """For Read Json"""
 with open("new_data.json",mode="r") as file:
     json_reader=file.read()
-    json_loads=json.loads(json_reader)
+    json_loads=json.loads(json_reader)  #Str to Convert Dict
 
 """Write Json data"""
 json_data={
@@ -59,5 +59,5 @@ json_data={
     "Age":28
 }
 with open("create_json.json",mode="w") as file:
-    dict_con=json.dumps(json_data)
+    dict_con=json.dumps(json_data)   #Dict to convert Str
     json_writer=file.write(dict_con)
