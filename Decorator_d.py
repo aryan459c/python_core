@@ -1,5 +1,5 @@
 """DECORE"""
-def is_even(is_prime):
+"""def is_even(is_prime):
     def even_odd(num):
         if num % 2 == 0:
             return (num, "is even")
@@ -18,4 +18,19 @@ def is_prime(num):
         return (num, "is not a prime number")
 
 print(is_prime(3))
-print(is_prime(10))
+print(is_prime(10))"""
+
+
+"""DECORATOR 2"""
+
+def wish(add):
+    def hello(a,b):
+        print("Hello")
+        result=add(a,b)
+        print(result)
+        print("Thankyou")
+    return hello
+@wish
+def add(a,b):
+    return a+b
+print(add(20,30))
