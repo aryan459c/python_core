@@ -12,5 +12,5 @@ class C(B):
 class D(C):
     def f4(self):
         print("print f4")
-obj=B()
-print(obj.f2())
+obj=D()
+print(obj.f1())

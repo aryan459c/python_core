@@ -1,4 +1,4 @@
-li = [
+"""li = [
 {'Name':'A','Age':26,'Salary':67000},
 {'Name':'B','Age':27,'Salary':89000},
 {'Name':'C','Age':34,'Salary':65000},
@@ -9,7 +9,7 @@ li = [
 {'Name':'G','Age':33,'Salary':70000},
 
 ]
-
+"""
 
 """for  i in li:
     if i['Age']>30:
@@ -20,12 +20,10 @@ li = [
             print(i["Name"])
             print(i['Age'])"""
 
-
 """for i in li:
         if i.get('Salary')>60000 and i.get('Salary')<70000:
             print(i["Name"])
             print(i['Age'])"""
-
 
 """for i in li:
     if 60000 <= i['Salary'] <= 70000:
@@ -53,3 +51,12 @@ while num <= num_end:
     num += 1
     print(num)
 print(sum)"""
+
+X = {"glossary": {"title": "example glossary", "GlossDiv": {"title": "S", "GlossList": {
+    "GlossEntry": {"ID": "SGML", "SortAs": "SGML", "GlossTerm": "Standard Generalized Markup Language",
+                   "Acronym": "SGML", "Abbrev": "ISO 8879:1986",
+                   "GlossDef": {"para": "A meta-markup language, used to create markup languages such as DocBook.",
+                                "GlossSeeAlso": ["GML", "XML"]}, "GlossSee": "markup"}}}}}
+
+pr = (X["glossary"]["GlossDiv"]['GlossList']['GlossEntry']['GlossDef']['GlossSeeAlso'])
+print(pr)
